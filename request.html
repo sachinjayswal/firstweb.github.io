@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>request blood</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 60;
+  padding: 0;
+  overflow: hidden;
+border-style: solid;
+}
+
+li {
+  float: left;
+  border-right:2px solid ;
+}
+
+li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: lightgreen;
+}
+h4 {
+
+text-align: right;
+word-spacing: 300px;
+}
+h3 {
+
+text-align: right;
+}
+/*unvisited link*/    a:link {
+color:pink;
+text-decoration: none;
+}
+/*visited link*/   a:visited {
+color:green;
+text-decoration: none;
+}
+/*hover*/    a:hover {
+color:yellow;
+text-decoration: none;
+}
+/*selected link*/   a:active {
+color:blue;
+text-decoration: none;
+}
+legend { 
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+padding-top: 10px;
+}
+input[type=submit] {
+width: 10%;
+background: red;
+height: 10%;
+}
+</style>
+</head>
+<body bgcolor="olive">
+<div class="container"> <div class="row"> </div>  <div class="logo"> <img src="logo.png" alt="Universe" />  </div> <h3><form class="form-horizontal" method="post"  id="login_user"> <label>Email/Mobile Number</label> <input type="text" id="emailid" name="emailid"  value="" title="Email can contain only letters, numbers, periods (.), @, hyphens (-) and underscores (_)."> <label>Password</label> <input type="password" id="password" name="password" value="" title=" Please enter your password. Minimum 8 characters,case sensitive."> <button type="submit"  login-form-head>Login</button></div></h3>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us </a></li>
+  <li><a href="register.html">Register As Donor</a></li>
+  <li><a class="active" href="#">Request Blood</a></li>
+  <li><a href="Blood tips.html">Blood Tips</a></li>
+<li><a href="contact as.html">Contact Us</a></li>
+</ul>
+
+<h1><b>Request Blood</b></h1>
+<form action="thanks.html">
+ <fieldset>
+  <legend>Patient Details</legend>
+  <h2>Patient Name: <input type="text" required></h2>
+<h2> Blood group:
+    <select>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+    </select></h2>
+<h2>City: <input type="text"></h2>
+<h2>Hospital Name & Address: <input type="text" required></h2>  
+<h2>Doctor Name: <input type="text" required><br></h2>
+</fieldset>
+<fieldset>
+<legend>CONTACT INFORMATION</legend>
+<h2>Contact Name: <input type="text"></h2>
+ <h2>Contact Email ID: <input type="text"> </h2>
+ <h2>Contact Number: <input type="text" required> </h2>
+ <h2>Other Message: <input type="text"> </h2>
+ <h2>When required: <input type="date" required> </h2>
+</fieldset>
+<h2><input type="checkbox" name="">I agree to have my contact details broadcasted to the registered donors of BloodBankIndia.net</h2>
+<center>
+<h2><input type="submit" value="submit" formaction="thanks.html"></h2>
+</center>
+</form>
+</body>
+</html>
